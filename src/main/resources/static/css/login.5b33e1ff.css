@@ -1,0 +1,1 @@
+.login_container{height:100vh;display:flex;justify-content:center;align-items:center;background:linear-gradient(200deg,#e3c5eb,#a9c1ed);overflow:hidden}.login_main{box-sizing:border-box;width:400px;height:450px;background-color:#fff;border-radius:8px;box-shadow:10px 5px 5px rgba(0,0,0,.2)}.login_main h1{height:150px;line-height:150px;text-align:center}.login_form{padding:0 50px}

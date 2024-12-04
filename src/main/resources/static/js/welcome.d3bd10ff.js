@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkhrms_frontend"]=self["webpackChunkhrms_frontend"]||[]).push([[773],{9798:function(n,e,s){s.r(e),s.d(e,{default:function(){return v}});var c=s(3396);const t=n=>((0,c.dD)("data-v-441cd598"),n=n(),(0,c.Cn)(),n),r={class:"welcome"},d=t((()=>(0,c._)("div",{class:"title"},"欢迎使用",-1))),a=t((()=>(0,c._)("p",{class:"desc"},"智能化得人力资源管理系统",-1))),u=[d,a];function o(n,e){return(0,c.wg)(),(0,c.iD)("div",r,u)}var f=s(89);const i={},l=(0,f.Z)(i,[["render",o],["__scopeId","data-v-441cd598"]]);var v=l}}]);
+//# sourceMappingURL=welcome.d3bd10ff.js.map

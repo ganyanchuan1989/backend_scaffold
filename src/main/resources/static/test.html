@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List类型的请求参数</title>
+    <meta name="author" content="pan_junbiao的博客">
+    <style>
+        .u_button{padding: 5px; margin-top: 10px;}
+    </style>
+</head>
+    <input type="button" class="u_button" value="批量新增" id="btnBatchAdd"/>
+<body>
+</body>
+<script src="./jquery.js"></script>
+<script>
+    $(document).ready(function()
+    {
+        //批量删除事件
+        $("#btnBatchAdd").click(function() {
+            //创建用户列表
+            let userList = [];
+            userList.push({userId: 1, userName: "pan_junbiao的博客", blogRemark: "您好，欢迎访问 pan_junbiao的博客"});
+            userList.push({userId: 2, userName: "pan_junbiao的博客", blogRemark: "https://blog.csdn.net/pan_junbiao"});
+            userList.push({userId: 3, userName: "pan_junbiao的博客", blogRemark: "您好，欢迎访问 pan_junbiao的博客"});
+            userList.push({userId: 4, userName: "pan_junbiao的博客", blogRemark: "https://blog.csdn.net/pan_junbiao"});
+            userList.push({userId: 5, userName: "pan_junbiao的博客", blogRemark: "您好，欢迎访问 pan_junbiao的博客"});
+ 
+            //执行Ajax请求
+            $.ajax({
+                type: "POST",
+                url: "/api/test/batchAddUser",
+                contentType: "application/json; charset=UTF-8",
+                data: JSON.stringify(userList), //转换为JSON
+                success: function (result) {
+                    if (result == true) {
+                        alert("新增成功");
+                    }
+                    else {
+                        alert("新增失败");
+                    }
+                }
+            });
+        });
+    });
+</script>
+</html>
