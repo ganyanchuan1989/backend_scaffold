@@ -5,12 +5,13 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
+
 public enum ResponseCodeEnums {
 
     SUCCESS(200, "success"),
     FAIL(500, "failed"),
 
-    NO_LOGIN(999, "no login"),
+    NO_LOGIN(999, "请先登录"),
 
     HTTP_STATUS_200(200, "ok"),
     HTTP_STATUS_400(400, "request error"),

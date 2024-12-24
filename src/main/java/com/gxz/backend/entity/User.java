@@ -19,4 +19,14 @@ public class User implements Serializable {
     private String userName;
     private String email;
     private String userPwd;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", email='" + email + '\'' +
+                ", userPwd='" + userPwd + '\'' +
+                '}';
+    }
 }

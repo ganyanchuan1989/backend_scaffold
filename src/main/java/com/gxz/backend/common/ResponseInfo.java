@@ -20,6 +20,10 @@ public class ResponseInfo<T> {
         return new ResponseInfo<>(ResponseCodeEnums.FAIL.getCode(), message);
     }
 
+    public static <T> ResponseInfo<T> fail(int code , String message) {
+        return new ResponseInfo<>(code, message);
+    }
+
     public ResponseInfo() {
         this.code = ResponseCodeEnums.SUCCESS.getCode();
         this.message = ResponseCodeEnums.SUCCESS.getMessage();
