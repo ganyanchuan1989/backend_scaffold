@@ -28,8 +28,10 @@ public class UserController {
     private IUserService userService;
 
     @RequestMapping("/tes2")
+//    @RequestMapping(method = RequestMethod.GET, value = "/test", headers = {"content-type=text/plain","content-type=text/html"})
     public ResponseEntity<ResponseInfo> ss(){
-
+        MultiValueMap headers = new LinkedMultiValueMap();
+        headers.add("Content-Type","application/json");
         return new ResponseEntity(ResponseInfo.success("111"), headers, HttpStatusCode.valueOf(200));
     }
     @RequestMapping("/login")
